@@ -6,7 +6,7 @@ function App() {
   return (
     <>
 
-      <Contador valor={0} min={0} max={20} step={1} />
+      <Contador valorInicial={6} min={0} max={20} step={1} />
     
     </>
   )

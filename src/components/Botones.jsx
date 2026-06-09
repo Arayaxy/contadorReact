@@ -1,4 +1,4 @@
-export const Botones = ({ count, setCount, min, max, step }) => {
+export const Botones = ({ count, setCount, min, max, step, valorInicial }) => {
     const handleSum = () => {
         if (count + step <= max) {
             setCount(count + step)
@@ -12,7 +12,7 @@ export const Botones = ({ count, setCount, min, max, step }) => {
     }
 
     const handleReset = () => {
-        setCount(0)
+        setCount(valorInicial)
     }
 
     return (
